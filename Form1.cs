@@ -16,5 +16,53 @@ namespace Topic_9_12___Assignment_1
         {
             InitializeComponent();
         }
+
+        
+        double number1, number2;
+        string factor;
+
+        private void btnPlus_Click(object sender, EventArgs e)
+        {
+            if (txtNumber1.Text != null)
+            {
+
+                if (Double.TryParse(txtNumber1.Text, out number1))
+                {
+
+                }
+                else
+                {
+                    lblInvalid.Visible = true;
+                }
+            }
+            else
+            {
+                lblInvalid.Visible = true;
+            }
+        }
+
+        private void btnMinus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMultiply_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDivide_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExponent_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void btnEquals_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
