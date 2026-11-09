@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnEquals = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCalculation = new System.Windows.Forms.Label();
             this.txtNumber1 = new System.Windows.Forms.TextBox();
             this.txtNumber2 = new System.Windows.Forms.TextBox();
             this.btnPlus = new System.Windows.Forms.Button();
@@ -37,8 +37,9 @@
             this.btnMultiply = new System.Windows.Forms.Button();
             this.btnDivide = new System.Windows.Forms.Button();
             this.btnExponent = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.lblInvalid = new System.Windows.Forms.Label();
+            this.lblWhat = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnEquals
@@ -52,15 +53,15 @@
             this.btnEquals.UseVisualStyleBackColor = true;
             this.btnEquals.Click += new System.EventHandler(this.btnEquals_Click);
             // 
-            // label1
+            // lblCalculation
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Papyrus", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(232, 30);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "hoo hoo ha ha test message";
+            this.lblCalculation.AutoSize = true;
+            this.lblCalculation.Font = new System.Drawing.Font("Papyrus", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCalculation.Location = new System.Drawing.Point(12, 9);
+            this.lblCalculation.Name = "lblCalculation";
+            this.lblCalculation.Size = new System.Drawing.Size(232, 30);
+            this.lblCalculation.TabIndex = 1;
+            this.lblCalculation.Text = "hoo hoo ha ha test message";
             // 
             // txtNumber1
             // 
@@ -133,15 +134,16 @@
             this.btnExponent.UseVisualStyleBackColor = true;
             this.btnExponent.Click += new System.EventHandler(this.btnExponent_Click);
             // 
-            // button6
+            // btnClear
             // 
-            this.button6.Font = new System.Drawing.Font("Papyrus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(63, 127);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(198, 45);
-            this.button6.TabIndex = 9;
-            this.button6.Text = "Clear";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnClear.Font = new System.Drawing.Font("Papyrus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(63, 127);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(198, 45);
+            this.btnClear.TabIndex = 9;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // lblInvalid
             // 
@@ -154,13 +156,25 @@
             this.lblInvalid.Text = "Invalid Input! Try Again!";
             this.lblInvalid.Visible = false;
             // 
+            // lblWhat
+            // 
+            this.lblWhat.AutoSize = true;
+            this.lblWhat.Font = new System.Drawing.Font("Papyrus", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWhat.Location = new System.Drawing.Point(12, 175);
+            this.lblWhat.Name = "lblWhat";
+            this.lblWhat.Size = new System.Drawing.Size(252, 30);
+            this.lblWhat.TabIndex = 11;
+            this.lblWhat.Text = "how did you even get this lmao";
+            this.lblWhat.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(279, 217);
+            this.ClientSize = new System.Drawing.Size(618, 217);
+            this.Controls.Add(this.lblWhat);
             this.Controls.Add(this.lblInvalid);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnExponent);
             this.Controls.Add(this.btnDivide);
             this.Controls.Add(this.btnMultiply);
@@ -168,7 +182,7 @@
             this.Controls.Add(this.btnPlus);
             this.Controls.Add(this.txtNumber1);
             this.Controls.Add(this.txtNumber2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblCalculation);
             this.Controls.Add(this.btnEquals);
             this.Name = "Form1";
             this.Text = "Simple Calculator!";
@@ -180,7 +194,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnEquals;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCalculation;
         private System.Windows.Forms.TextBox txtNumber1;
         private System.Windows.Forms.TextBox txtNumber2;
         private System.Windows.Forms.Button btnPlus;
@@ -188,8 +202,9 @@
         private System.Windows.Forms.Button btnMultiply;
         private System.Windows.Forms.Button btnDivide;
         private System.Windows.Forms.Button btnExponent;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label lblInvalid;
+        private System.Windows.Forms.Label lblWhat;
     }
 }
 
